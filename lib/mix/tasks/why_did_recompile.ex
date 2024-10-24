@@ -38,7 +38,7 @@ defmodule Mix.Tasks.WhyDidRecompile do
         result ->
           Mix.shell().info("Found a transitive compile time dependency for you:")
 
-          IO.inspect(result)
+          IO.inspect(result, limit: :infinity)
       end
     end
   end
